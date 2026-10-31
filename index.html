@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZBL Craft Launcher — 简约丝滑的 Minecraft 启动器</title>
+<meta name="description" content="ZBL Craft Launcher（ZBLCL）— 一款简约丝滑的 Minecraft Java 版启动器，深色侧栏、翡翠绿主题、免费下载。">
+<link rel="icon" type="image/png" href="assets/img/icon.png">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- 跟随光晕 -->
+<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+<!-- 背景光斑与网格 -->
+<div class="bg-fx" aria-hidden="true">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+  <div class="grid-overlay"></div>
+</div>
+
+<!-- 导航 -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-brand">
+      <img src="assets/img/icon.png" alt="ZBL Craft Launcher 图标" class="nav-icon">
+      <span class="nav-name">ZBL <em>Craft Launcher</em></span>
+    </a>
+    <nav class="nav-links">
+      <a href="#features">特性</a>
+      <a href="#screens">界面</a>
+      <a href="#faq">常见问题</a>
+      <a href="#download" class="btn btn-nav">下载 <span class="ver-inline" data-version>v1.0.0</span></a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <span class="hero-badge reveal">
+          <span class="dot"></span> v1.0.0 正式发布 · 免费使用
+        </span>
+        <h1 class="reveal">
+          简约，<span class="grad">丝滑</span>，<br>重新定义启动体验
+        </h1>
+        <p class="hero-sub reveal">
+          ZBL Craft Launcher 是一款现代风格的 Minecraft Java 版启动器。
+          深墨绿侧栏、翡翠绿主题、白卡片布局 —— 每一次点击都干脆利落。
+        </p>
+        <div class="hero-actions reveal">
+          <a class="btn btn-primary btn-lg" href="#download">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+            免费下载
+          </a>
+          <a class="btn btn-ghost btn-lg" href="#features">了解特性</a>
+        </div>
+        <div class="hero-meta reveal">
+          <span>Windows 10 / 11</span><i></i>
+          <span>单文件 <span data-size>5.3</span> MB</span><i></i>
+          <span>无需安装 · 解压即用</span>
+        </div>
+      </div>
+
+      <div class="hero-shot reveal" data-tilt>
+        <div class="shot-glow"></div>
+        <img src="assets/img/shot-launch.png" alt="ZBL Craft Launcher 启动页界面" draggable="false">
+      </div>
+    </div>
+
+    <a href="#features" class="scroll-hint" aria-label="向下滚动">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- 特性 -->
+  <section class="section" id="features">
+    <div class="section-head reveal">
+      <span class="section-tag">FEATURES</span>
+      <h2>为流畅而生</h2>
+      <p>不是换皮，是把骨架重做 —— 从布局到交互全部重来。</p>
+    </div>
+    <div class="feature-grid">
+      <div class="card reveal" data-tilt>
+        <div class="card-icon ci-green">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg>
+        </div>
+        <h3>极致丝滑的界面</h3>
+        <p>全局动画曲线精心调校，页面切换、卡片悬浮、按钮反馈一气呵成，没有任何生硬的跳变。</p>
+      </div>
+      <div class="card reveal" data-tilt>
+        <div class="card-icon ci-emerald">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+        </div>
+        <h3>侧栏式全新布局</h3>
+        <p>启动、下载、联机、设置、帮助五页收纳于深墨绿侧栏，选中态以主色胶囊高亮，层级一目了然。</p>
+      </div>
+      <div class="card reveal" data-tilt>
+        <div class="card-icon ci-teal">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+        </div>
+        <h3>全版本资源下载</h3>
+        <p>内置 Minecraft 全版本列表与 Forge / NeoForge 等主流加载器，选好版本一键安装，无需东奔西走。</p>
+      </div>
+      <div class="card reveal" data-tilt>
+        <div class="card-icon ci-lime">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+        </div>
+        <h3>正版 / 离线双登录</h3>
+        <p>支持正版账号与离线模式，启动页直观切换；进不进得了世界，一个按钮说了算。</p>
+      </div>
+      <div class="card reveal" data-tilt>
+        <div class="card-icon ci-green">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h0a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51h0a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v0a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+        </div>
+        <h3>细致入微的设置</h3>
+        <p>内存分配、Java 路径、窗口尺寸、主题细节 —— 该有的都有，且每一项都放在你找得到的地方。</p>
+      </div>
+      <div class="card reveal" data-tilt>
+        <div class="card-icon ci-emerald">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <h3>内置帮助中心</h3>
+        <p>启动失败先看「启动日志」，再翻「帮助」指南 —— 常见问题分步拆解，新手也能自救。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 界面展示（无限横向滚动） -->
+  <section class="section" id="screens">
+    <div class="section-head reveal">
+      <span class="section-tag">SCREENSHOTS</span>
+      <h2>所见即所得</h2>
+      <p>全部页面均为实机截图，没有精修 — 长什么样，打开就是什么样。</p>
+    </div>
+  </section>
+  <div class="marquee" aria-hidden="false">
+    <div class="marquee-track" id="marqueeTrack">
+      <figure class="marquee-item"><img src="assets/img/shot-launch.png" alt="启动页"><figcaption>启动页 · 快速开始</figcaption></figure>
+      <figure class="marquee-item"><img src="assets/img/shot-download.png" alt="下载页"><figcaption>下载页 · 全版本安装</figcaption></figure>
+      <figure class="marquee-item"><img src="assets/img/shot-setup.png" alt="设置页"><figcaption>设置页 · 细致可控</figcaption></figure>
+      <figure class="marquee-item"><img src="assets/img/shot-help.png" alt="帮助页"><figcaption>帮助页 · 新手指南</figcaption></figure>
+      <!-- 复制一份用于无缝循环（JS 会自动克隆） -->
+    </div>
+  </div>
+
+  <!-- 下载 -->
+  <section class="section" id="download">
+    <div class="dl-card reveal" data-tilt>
+      <div class="dl-glow"></div>
+      <div class="dl-left">
+        <img src="assets/img/icon.png" alt="ZBL Craft Launcher 图标" class="dl-icon">
+        <div>
+          <h2>立即下载 ZBL Craft Launcher</h2>
+          <p>单文件 · 免安装 · 永久免费</p>
+        </div>
+      </div>
+      <div class="dl-right">
+        <a class="btn btn-primary btn-xl" id="dlBtn" href="download/ZBL-Craft-Launcher-v1.0.0.exe" download>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+          下载 Windows 版
+        </a>
+        <ul class="dl-meta">
+          <li><span data-version>v1.0.0</span> · 最新版</li>
+          <li><span data-size>5.3</span> MB</li>
+          <li>Windows 10 / 11（64 位）</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="dl-steps">
+      <div class="step reveal">
+        <span class="step-num">1</span>
+        <h3>下载</h3>
+        <p>点击上方按钮，获取单文件 exe。</p>
+      </div>
+      <div class="step-arrow reveal">→</div>
+      <div class="step reveal">
+        <span class="step-num">2</span>
+        <h3>运行</h3>
+        <p>双击直接运行，无需安装任何东西。</p>
+      </div>
+      <div class="step-arrow reveal">→</div>
+      <div class="step reveal">
+        <span class="step-num">3</span>
+        <h3>开玩</h3>
+        <p>在「下载」页装好版本，回启动页开玩。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-narrow" id="faq">
+    <div class="section-head reveal">
+      <span class="section-tag">FAQ</span>
+      <h2>常见问题</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq reveal">
+        <summary>启动器是免费的吗？<span class="faq-icon"></span></summary>
+        <p>是。ZBL Craft Launcher 完全免费，没有任何广告或内购。</p>
+      </details>
+      <details class="faq reveal">
+        <summary>需要安装吗？<span class="faq-icon"></span></summary>
+        <p>不需要。下载得到的是单个 exe 文件，双击即可运行；Windows 10 / 11 自带所需的 .NET 运行时。</p>
+      </details>
+      <details class="faq reveal">
+        <summary>支持哪些 Minecraft 版本？<span class="faq-icon"></span></summary>
+        <p>支持官方发布历史中的全部 Java 版本，并可直接安装 Forge、NeoForge 等主流模组加载器。</p>
+      </details>
+      <details class="faq reveal">
+        <summary>启动失败怎么办？<span class="faq-icon"></span></summary>
+        <p>先在启动页点「启动日志」查看报错，再到「帮助」页翻对应指南；绝大多数问题都能按步骤自行解决。</p>
+      </details>
+      <details class="faq reveal">
+        <summary>可以离线游玩吗？<span class="faq-icon"></span></summary>
+        <p>可以。启动页顶部可切换「正版 / 离线」模式，离线模式填入游戏用户名即可进入单人与局域网世界。</p>
+      </details>
+    </div>
+  </section>
+
+</main>
+
+<!-- 页脚 -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="assets/img/icon.png" alt="" class="nav-icon">
+      <span>ZBL <em>Craft Launcher</em></span>
+    </div>
+    <p class="footer-note">
+      免费开源精神 · 界面原创设计 · 与 Mojang / Microsoft 无从属关系<br>
+      <span class="footer-dim">Minecraft 是 Mojang Synergies AB 的商标</span>
+    </p>
+    <p class="footer-copy">© 2026 ZBL · <span data-version>v1.0.0</span></p>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="返回顶部">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+</button>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
